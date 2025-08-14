@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.6 on darwin)" generated="2025-08-14T03:23:13.044836" rpa="false" schemaversion="5">
+<suite id="s1" name="Web Automation Demo" source="/Users/bekhzodibragimov/1.0/web_automation_demo.robot">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2025-08-14T03:23:13.215292" level="INFO">Starting Web Automation Demo</msg>
+<arg>Starting Web Automation Demo</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-14T03:23:13.215109" elapsed="0.000256"/>
+</kw>
+<test id="s1-t1" name="Test Gmail Website With Selenium" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-14T03:23:13.216399" level="INFO">Opening browser 'chrome' to base url 'https://gmail.com'.</msg>
+<arg>${GMAIL_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-14T03:23:13.216062" elapsed="2.530009"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-14T03:23:15.746776" elapsed="0.333415"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-08-14T03:23:16.085515" level="INFO">Page title is 'Gmail'.</msg>
+<arg>Gmail</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-08-14T03:23:16.080441" elapsed="0.005193"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-08-14T03:23:16.114051" level="INFO">Current page contains text 'Gmail'.</msg>
+<arg>Gmail</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-08-14T03:23:16.085911" elapsed="0.028262"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=identifierId</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-08-14T03:23:16.114442" elapsed="0.009960"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-14T03:23:16.124849" elapsed="0.106860"/>
+</kw>
+<doc>Test Gmail using Selenium WebDriver</doc>
+<tag>gmail</tag>
+<tag>selenium</tag>
+<status status="PASS" start="2025-08-14T03:23:13.215506" elapsed="3.016630"/>
+</test>
+<test id="s1-t2" name="Test Google Website With Selenium" line="23">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-14T03:23:16.233998" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
+<arg>${GOOGLE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-14T03:23:16.233568" elapsed="1.775272"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-14T03:23:18.009609" elapsed="0.331763"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-08-14T03:23:18.361198" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-08-14T03:23:18.342223" elapsed="0.019118"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-08-14T03:23:18.378309" level="INFO">Current page contains element 'name=q'.</msg>
+<arg>name=q</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-08-14T03:23:18.361553" elapsed="0.016872"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-14T03:23:18.378765" elapsed="0.100136"/>
+</kw>
+<doc>Test Google using Selenium WebDriver</doc>
+<tag>google</tag>
+<tag>selenium</tag>
+<status status="PASS" start="2025-08-14T03:23:16.232671" elapsed="2.246677"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2025-08-14T03:23:18.480425" level="INFO">Completed Web Automation Demo</msg>
+<arg>Completed Web Automation Demo</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-14T03:23:18.480275" elapsed="0.000200"/>
+</kw>
+<doc>Comprehensive web automation demo using Robot Framework</doc>
+<status status="PASS" start="2025-08-14T03:23:13.046800" elapsed="5.433721"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">gmail</stat>
+<stat pass="1" fail="0" skip="0">google</stat>
+<stat pass="2" fail="0" skip="0">selenium</stat>
+</tag>
+<suite>
+<stat name="Web Automation Demo" id="s1" pass="2" fail="0" skip="0">Web Automation Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
