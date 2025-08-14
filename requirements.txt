@@ -3,3 +3,6 @@ playwright==1.54.0
 robotframework==7.3.2
 robotframework-seleniumlibrary==6.7.1
 robotframework-playwright==0.1.0
+pytest==8.4.1
+pytest-playwright==0.7.0
+pytest-selenium==4.1.0
